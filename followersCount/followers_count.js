@@ -17,3 +17,13 @@ function checkCountValue() {
 function displayCount() {
     document.getElementById('countDisplay').innerHTML = count;
 }
+
+function reset() {
+    count = 0;
+    displayCount();
+    announceReset();
+}
+
+function announceReset() {
+    alert("Your followers count has been reset!")
+}
